@@ -823,7 +823,7 @@ type Exception with
                     |> List.map (fun (name, tTy) ->
                         tTy,
                         {
-                            ArgReprInfo.Name = name |> Option.map (fun name -> Ident(name, range.Zero))
+                            ArgReprInfo.Name = name |> Option.map (fun name -> Ident(name, m))
                             ArgReprInfo.Attribs = []
                         })
 
